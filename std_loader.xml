@@ -1,0 +1,11 @@
+<aiml version="1.0.1" encoding="UTF-8">
+    <!-- Category is an atomic AIML unit -->
+    <category>
+        <!-- Pattern to match in user input -->
+        <!-- If user enters "LOAD AIML B" -->
+        <pattern>LOAD AIML B</pattern>
+        <template>
+            <learn>ava_brain/*.aiml</learn>
+        </template>   
+    </category>
+</aiml>
