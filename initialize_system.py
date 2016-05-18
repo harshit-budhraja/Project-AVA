@@ -35,11 +35,14 @@ def hear():
 kernel = aiml.Kernel()
 
 if os.path.isfile("bot_brain.brn"):
-    kernel.bootstrap(brainFile = "bot_brain.brn")
+	kernel.bootstrap(brainFile = "bot_brain.brn")
 else:
-    kernel.bootstrap(learnFiles = "std_loader.xml", commands = "LOAD AIML B")
-
-os.system("clear")
+	print ("BOOTING KERNEL SYSTEM...")
+	kernel.bootstrap(learnFiles = "std_loader.xml", commands = "LOAD AIML B")
+	print "BOOT COMPLETED...\nAVA SYSTEM NOW AVAILABLE"
+	time.sleep(3)
+	os.system("clear")
+	
 # kernel now ready for use
 while True:
 	if mode == "voice":
@@ -49,8 +52,10 @@ while True:
 		#os.system("clear")
 		response = raw_input("Write to AVA:- ")
 	if response.lower().replace(" ","") in terminate:
+		ava_speech = "We'll catch up later then...BYE"
+		print "AVA:- " + ava_speech
+		offline_speak(ava_speech)
 		break
 	ava_speech = kernel.respond(response)
 	print "AVA:- " + ava_speech
-	offline_speak(ava_speech)
-	
+	offline_speak(ava_speech)	
