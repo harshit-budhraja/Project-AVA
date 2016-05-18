@@ -116,5 +116,12 @@ The time is <system>date | awk '{print $4}'</system> or <system>date "+%l:%M%P"<
             Do you want me to google that for you?
         </template>
     </category>
+    
+    <category>
+        <pattern>WHAT IS YOUR NAME</pattern>
+        <template>
+            My name is AVA. What's yours ?
+        </template>
+    </category>
 
 </aiml>

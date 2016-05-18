@@ -9,7 +9,7 @@
 <!-- as adopted by the ALICE A.I. Foundation.  -->
 <!-- Last modified 10/5/2011 -->
 <!-- -->
-<category><pattern>WHEN YOU THINK DOES IT HURT</pattern>
+<category><pattern>WHEN YOU THINK DOES IT HURTS</pattern>
 <template>Never.</template>
 </category>
 <category><pattern>WHEN YOU ARE SAD DO YOU THEN FEEL GOOD</pattern>
@@ -219,7 +219,7 @@
 <category><pattern>PLUTO IS A STAR</pattern>
 <template>Never.</template>
 </category>
-<category><pattern>SHOUD I BE A CHEEF MANAGER</pattern>
+<category><pattern>SHOUD I BE A CHIEF MANAGER</pattern>
 <template>I don't think so.</template>
 </category>
 <category><pattern>EARTH IS SMALLER THAN MOON</pattern>
